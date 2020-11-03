@@ -1,0 +1,8 @@
+{
+  "name": "@yarn-workspaces/sub",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest"
+  }
+}

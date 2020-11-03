@@ -1,0 +1,13 @@
+{
+  "name": "@yarn-workspaces/main",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "start:prod": "node src/index.js",
+    "test": "cross-env NODE_ENV=test jest"
+  },
+  "dependencies": {
+    "@yarn-workspaces/sub": "*"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb-typescript/base",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "prettier",
+    "prettier/@typescript-eslint"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {},
+  "overrides": [
+    {
+      "files": ["**/__tests__/**", "**/scripts/**"],
+      "env": {
+        "jest": true
+      },
+      "rules": {
+        "no-console": 0,
+        "import/no-extraneous-dependencies": 0,
+        "@typescript-eslint/no-non-null-assertion": 0
+      }
+    }
+  ]
+}
